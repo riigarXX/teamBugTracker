@@ -1,0 +1,53 @@
+
+.card {
+  background-color: $card_background_color; // Fondo de la tarjeta
+  border: $border_width solid $border_color;
+  border-radius: $border_radius;
+  box-shadow: $box_shadow;
+  padding: $spacing_unit * 2;
+  margin: auto; // Centramos horizontalmente
+  color: $text_color; // Color del texto
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-header {
+    font-family: $secondary_font_family;
+    font-size: $large_font_size;
+    color: $primary_color;
+    margin-bottom: $spacing_unit * 1.5;
+  }
+
+  .card-body {
+    font-family: $primary_font_family;
+    font-size: $base_font_size;
+    color: $text_color;
+    margin-bottom: $spacing_unit * 2;
+
+    p {
+      margin-bottom: $spacing_unit;
+    }
+  }
+
+  .card-footer {
+    text-align: right;
+
+    .btn {
+      @extend .button !optional;
+    }
+  }
+}
+
+// Media queries for responsive design
+@media (min-width: 768px) {
+  .card {
+    width: 70%; // Ancho de la tarjeta para pantallas medianas
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 50%; // Ancho de la tarjeta para pantallas grandes
+  }
+}

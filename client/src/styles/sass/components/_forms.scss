@@ -1,0 +1,30 @@
+// Estilos para etiquetas
+label {
+    display: block;
+    margin-bottom: 0.5rem; // Espacio entre etiquetas
+    font-size: 1rem; // Tamaño de fuente para etiquetas
+    color: $text_color; // Color de texto para etiquetas
+  }
+  
+  // Estilos para campos de entrada
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  textarea {
+    width: 100%; // Ocupar todo el ancho disponible
+    padding: 0.5rem; // Espaciado interno
+    font-size: 1rem; // Tamaño de fuente
+    line-height: 1.5; // Altura de línea
+    border: 1px solid $border_color; // Borde
+    border-radius: $border_radius; // Radio de borde
+    background-color: $input_background_color; // Color de fondo
+    color: $text_color; // Color de texto
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  

@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-left: $spacing_unit;
+    padding-right: $spacing_unit;
+    box-sizing: border-box;
+    height: 100vh; // Establecer altura al 100% del viewport height (vh)
+  }
+  

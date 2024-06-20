@@ -1,0 +1,27 @@
+// Estilos para los toasts
+.toast {
+    padding:  $spacing_unit * 2;
+    border-radius: $border_radius;
+    font-size: 16px;
+    color: #fff;
+    transition: opacity 0.3s ease;
+  
+    &.error {
+      background-color: $error-color;
+    }
+  
+    &.success {
+      background-color: $success-color;
+    }
+  }
+  @media (min-width: 768px) {
+    .toast {
+      width: 70%; // Ancho de la tarjeta para pantallas medianas
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .toast {
+      width: 50%; // Ancho de la tarjeta para pantallas grandes
+    }
+  }

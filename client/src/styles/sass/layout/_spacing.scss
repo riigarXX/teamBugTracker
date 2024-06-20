@@ -1,0 +1,17 @@
+// Espaciado
+$spacing_unit: 8px;
+
+.mt-1 { margin-top: $spacing_unit; }
+.mt-2 { margin-top: $spacing_unit * 2; }
+.mt-3 { margin-top: $spacing_unit * 3; }
+.mt-4 { margin-top: $spacing_unit * 4; }
+
+.mb-1 { margin-bottom: $spacing_unit; }
+.mb-2 { margin-bottom: $spacing_unit * 2; }
+.mb-3 { margin-bottom: $spacing_unit * 3; }
+.mb-4 { margin-bottom: $spacing_unit * 4; }
+
+.p-1 { padding: $spacing_unit; }
+.p-2 { padding: $spacing_unit * 2; }
+.p-3 { padding: $spacing_unit * 3; }
+.p-4 { padding: $spacing_unit * 4; }

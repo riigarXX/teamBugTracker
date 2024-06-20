@@ -1,0 +1,35 @@
+@import 'layout/spacing';
+@import 'layout/container';
+@import 'layout/grid';
+@import 'vendors/fonts';
+@import 'utilities/borders';
+@import 'themes/colors';
+@import 'base/typography';
+@import 'components/buttons';
+@import 'components/toast';
+@import 'components/card';
+@import 'components/inputs';
+@import 'components/forms';
+
+// Form elements
+input, textarea, select {
+  font-family: $primary_font_family;
+  font-size: $base_font_size;
+  padding: $spacing_unit;
+  border: $border_width solid $border_color;
+  border-radius: $border_radius;
+  margin-bottom: $spacing_unit * 2;
+}
+
+
+body {
+  font-family: $primary_font_family;
+  margin: 0;
+  padding: 0;
+  width: 100vw; /* Ocupa todo el ancho visible de la ventana */
+  height: 100vh; /* Ocupa todo el alto visible de la ventana */
+}
+body {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+
+button {
+  font-family: $primary_font_family;
+  font-size: $base_font_size;
+  padding: $spacing_unit * 1.5 $spacing_unit * 2;
+  border: $border_width solid $border_color;
+  border-radius: $border_radius;
+  background-color: $primary_color;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: $box_shadow;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    background-color: darken($primary_color, 10%);
+  }
+  
+  &:active {
+    background-color: darken($primary_color, 15%);
+  }
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($primary_color, 0.5);
+  }
+}

@@ -1,0 +1,41 @@
+// Tamaños de fuente
+$base_font_size: 16px;
+$small_font_size: 14px;
+$large_font_size: 20px;
+$xlarge_font_size: 24px;
+
+
+body {
+  font-family: $primary_font_family;
+  font-size: $base_font_size;
+  color: $text_color;
+  background-color: $background_color; // Fondo oscuro
+  margin: 0;
+  padding: 0;
+  height: 100vh; // Aseguramos que el body ocupe todo el alto de la ventana
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $secondary_font_family;
+  color: $primary_color;
+  margin-bottom: $spacing_unit;
+}
+
+p {
+  font-family: $primary_font_family;
+  font-size: $base_font_size;
+  line-height: 1.6;
+  margin-bottom: $spacing_unit * 2;
+}
+
+a {
+  color: $primary_color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
