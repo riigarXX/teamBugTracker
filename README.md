@@ -79,7 +79,7 @@ cd <REPOSITORY_NAME>
 3. **Build the server (if applicable):**
 
     ```bash
-    npm run build
+    npm run dev
     ```
 
     This command compiles TypeScript files to JavaScript using TypeScript compiler (`tsc`).
